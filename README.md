@@ -63,8 +63,10 @@ This assumes you are using Postman
   - **`JSON`**
     
   Allows the user to send feedback via a JSON object.  
-  Example request body:  
+  Example request typed in body:  
   ```json
   {
     "message": "This API is great!"
   }
+
+Returns the coment from the API.
