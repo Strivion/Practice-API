@@ -1,0 +1,139 @@
+openapi: 3.0.3
+info:
+  title: Developer Profile API
+  version: 1.0.0
+  description: >
+    A simple RESTful API built with Flask.  
+    Exposes developer information, sample projects, and allows feedback submission.  
+    Includes JSON error handling for 404 responses.
+servers:
+  - url: http://localhost:5000
+    description: Local development
+  - url: https://YOUR-DEPLOYED-URL
+    description: Deployed server
+paths:
+  /about:
+    get:
+      summary: Get developer profile
+      description: Returns static information about the developer.
+      responses:
+        '200':
+          description: Developer information in JSON
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/About'
+              example:
+                name: "Aaron Stevens"
+                goals:
+                  - "Finish Honours degree in Software Development"
+                  - "Achieve conversational fluency in Japanese"
+                  - "Publish fantasy novels"
+                  - "Release MMO-lite game project"
+                skills:
+                  - "C++"
+                  - "C#"
+                  - "Blender"
+                  - "Unreal Engine"
+                  - "Game Design"
+                  - "Creative Writing"
+                  - "Japanese (JLPT N3 level)"
+                fun_fact: "I have an exceptional spatial memory—can recall building layouts years later."
+  /projects:
+    get:
+      summary: Get projects
+      description: Returns a list of real and fictional projects.
+      responses:
+        '200':
+          description: Projects list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Projects'
+              example:
+                projects:
+                  - "Making a simple API"
+                  - "Made a classic Text based CMD Line RPG"
+                  - "Developing an application for world domination"
+  /feedback:
+    post:
+      summary: Submit feedback
+      description: Accepts a JSON object containing a message. The message is stored in memory until the app restarts.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FeedbackRequest'
+            example:
+              message: "This API is great!"
+      responses:
+        '201':
+          description: Feedback accepted and stored
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackCreated'
+              example:
+                ok: true
+                message: "This API is great!"
+        '400':
+          description: Invalid input (missing message)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              example:
+                error: "Field 'message' is required"
+  /{any}:
+    get:
+      summary: Catch-all for invalid routes
+      responses:
+        '404':
+          description: Custom JSON error response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              example:
+                error: "The resource you requested could not be found."
+                status: 404
+components:
+  schemas:
+    About:
+      type: object
+      properties:
+        name: { type: string }
+        goals:
+          type: array
+          items: { type: string }
+        skills:
+          type: array
+          items: { type: string }
+        fun_fact: { type: string }
+      required: [name, goals, skills, fun_fact]
+    Projects:
+      type: object
+      properties:
+        projects:
+          type: array
+          items: { type: string }
+      required: [projects]
+    FeedbackRequest:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+          description: The feedback text to store.
+    FeedbackCreated:
+      type: object
+      properties:
+        ok: { type: boolean }
+        message: { type: string }
+      required: [ok, message]
+    Error:
+      type: object
+      properties:
+        error: { type: string }
+        status: { type: integer }
