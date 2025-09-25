@@ -8,6 +8,7 @@ FEEDBACK = []  # store feedback messages in memory
 
 @app.route('/about')
 def about():
+    # Returns developer information as JSON
     return jsonify(
         name="Aaron Stevens",
         goals=[
@@ -27,6 +28,7 @@ def about():
 
 @app.route('/projects')
 def projects():
+    # Returns projects that I hvae made (or fake ones) as JSON
     return jsonify(
         projects=[
             "Making a simple API",
@@ -38,6 +40,7 @@ def projects():
 
 
 @app.route('/feedback', methods=['POST'])
+# Accetps a JSON object from the user end and returns it as feedback.
 def feedback():
     data = request.get_json(silent=True) or {}
     message = (data.get("message") or "").strip()
@@ -50,6 +53,7 @@ def feedback():
 
 
 @app.errorhandler(404)
+# If message is missing/empty, this returns an error.
 def not_found(error):
     return jsonify(
     error="The resource you requested could not be found.",
@@ -60,3 +64,4 @@ def not_found(error):
 
 if __name__ == '__main__':
     app.run()
+
