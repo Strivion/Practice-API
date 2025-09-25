@@ -29,7 +29,7 @@ Returns developer information.
     "Japanese (JLPT N3 level)"
   ],
   "fun_fact": "I have an exceptional spatial memory—can recall building layouts years later."
-}
+}```
 
 ### 1) GET `/projects`
 Returns developer information.
