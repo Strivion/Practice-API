@@ -32,7 +32,7 @@ This assumes you are using Postman
   
   Returns a small section with information about the developer.
 
----
+
 
 ## **`GET /projects`**
   Set the dropdown on the url bar to:
@@ -46,7 +46,7 @@ This assumes you are using Postman
   
   Returns a list of sample projects (both real and fictional).
 
-  ---
+  
 
 ## **`POST /feedback`**
   Set the dropdown on the url bar to:
