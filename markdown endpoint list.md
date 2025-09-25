@@ -10,6 +10,7 @@ Returns developer information.
 - **`https://python-api-example-68ou.onrender.com/about`**
 
 **Example response (200)**
+**Example time (626ms)**
 ```json
 {
   "name": "Aaron Stevens",
@@ -38,6 +39,7 @@ Returns developer information.
 
 - **`https://python-api-example-68ou.onrender.com/projects`**
 - **Example response (200)**
+- **Example time (626ms)**
 ```json
 {
   "projects": [
@@ -54,14 +56,14 @@ Returns developer information.
 - **`https://python-api-example-68ou.onrender.com/feedback`**
 
 Requested body:
-**Example response (200)**
 ```json
 {
   "message": "This API is great!"
 }
 ```
 Successful responce:
-**Example response (200)**
+**Example response (201)**
+**Example time (221ms)**
 ```json
 {
   "ok": true,
