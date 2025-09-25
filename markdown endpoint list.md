@@ -29,13 +29,15 @@ Returns developer information.
     "Japanese (JLPT N3 level)"
   ],
   "fun_fact": "I have an exceptional spatial memory—can recall building layouts years later."
-}```
+}
+
+```
 
 ### 1) GET `/projects`
 Returns developer information.
 
 - **`https://python-api-example-68ou.onrender.com/projects`**
-
+```json
 {
   "projects": [
     "Making a simple API",
@@ -44,16 +46,21 @@ Returns developer information.
   ]
 }
 
+```
+
 ### 1) POST `/feedback`
 
 Requested body:
+```json
 {
   "message": "This API is great!"
 }
-
+```
 Successful responce:
+```json
 {
   "ok": true,
   "message": "This API is great!"
 }
+```
 
