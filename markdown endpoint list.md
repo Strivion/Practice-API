@@ -37,6 +37,7 @@ Returns developer information.
 Returns developer information.
 
 - **`https://python-api-example-68ou.onrender.com/projects`**
+- **Example response (200)**
 ```json
 {
   "projects": [
@@ -53,12 +54,14 @@ Returns developer information.
 - **`https://python-api-example-68ou.onrender.com/feedback`**
 
 Requested body:
+**Example response (200)**
 ```json
 {
   "message": "This API is great!"
 }
 ```
 Successful responce:
+**Example response (200)**
 ```json
 {
   "ok": true,
