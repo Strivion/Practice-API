@@ -16,6 +16,8 @@ If you'd like to try it out, you'll need a tool such as Postman, Insomnia, Hopps
 
 ---
 
+This assumes you are using Postman
+
 ## Endpoints
 
 - **`GET /about`**
