@@ -53,7 +53,7 @@ def feedback():
 
 
 @app.errorhandler(404)
-# If message is missing/empty, this returns an error.
+# Custom JSON response for missing routes.
 def not_found(error):
     return jsonify(
     error="The resource you requested could not be found.",
@@ -63,5 +63,7 @@ def not_found(error):
 
 
 if __name__ == '__main__':
+    # Start Flask development server
     app.run()
+
 
