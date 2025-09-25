@@ -34,7 +34,7 @@ This assumes you are using Postman
 
 ---
 
-- **`GET /projects`**
+## **`GET /projects`**
   Set the dropdown on the url bar to:
   
   - **`GET`**
@@ -48,7 +48,7 @@ This assumes you are using Postman
 
   ---
 
-- **`POST /feedback`**
+## **`POST /feedback`**
   Set the dropdown on the url bar to:
   
   - **`Post`**
