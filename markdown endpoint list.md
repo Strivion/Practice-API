@@ -51,6 +51,7 @@ Returns developer information.
 ### 1) POST `/feedback`
 
 - **`https://python-api-example-68ou.onrender.com/feedback`**
+
 Requested body:
 ```json
 {
