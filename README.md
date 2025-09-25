@@ -20,7 +20,7 @@ This assumes you are using Postman
 
 ## Endpoints
 
-- **`GET /about`**
+## **`GET /about`**
   Set the dropdown on the URL bar to:
   
   - **`GET`**
