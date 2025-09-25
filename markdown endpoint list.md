@@ -39,9 +39,9 @@ Returns developer information.
 Returns developer information.
 
 - **`https://python-api-example-68ou.onrender.com/projects`**
-- **Example response (200)**
-- 
-- **Example time (626ms)**
+**Example response (200)**
+
+**Example time (626ms)**
 ```json
 {
   "projects": [
@@ -65,6 +65,7 @@ Requested body:
 ```
 Successful responce:
 **Example response (201)**
+
 **Example time (221ms)**
 ```json
 {
