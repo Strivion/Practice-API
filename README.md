@@ -22,6 +22,7 @@ This assumes you are using Postman
 
 - **`GET /about`**
   Set the dropdown on the URL bar to:
+  
   - **`GET`**
     
   Append the folling to the end of the base URL:
@@ -31,8 +32,11 @@ This assumes you are using Postman
   
   Returns a small section with information about the developer.
 
+---
+
 - **`GET /projects`**
   Set the dropdown on the url bar to:
+  
   - **`GET`**
     
   Append the folling to the end of the base URL:
@@ -42,8 +46,11 @@ This assumes you are using Postman
   
   Returns a list of sample projects (both real and fictional).
 
+  ---
+
 - **`POST /feedback`**
   Set the dropdown on the url bar to:
+  
   - **`Post`**
     
   Append the folling to the end of the base URL:
