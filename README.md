@@ -10,6 +10,12 @@ It includes a small set of endpoints that expose information about the developer
 
 ---
 
+## Trying it out
+If you'd like to try it out, you'll a toolsuch as Postman. With your chosen tool open, insert the base URL:
+- **`https://python-api-example-68ou.onrender.com`**
+
+---
+
 ## Endpoints
 
 - **`GET /about`**  
