@@ -19,30 +19,40 @@ If you'd like to try it out, you'll need a tool such as Postman, Insomnia, Hopps
 ## Endpoints
 
 - **`GET /about`**
-  Set the dropdown on the url bar to:
+  Set the dropdown on the URL bar to:
   - **`GET`**
+  - 
   Append the folling to the end of the base URL:
   - **`/about`**
+    
   Run the search.
+  
   Returns a small section with information about the developer.
 
 - **`GET /projects`**
   Set the dropdown on the url bar to:
   - **`GET`**
+    
   Append the folling to the end of the base URL:
   - **`/projects`**
+    
   Run the search.
+  
   Returns a list of sample projects (both real and fictional).
 
 - **`POST /feedback`**
   Set the dropdown on the url bar to:
   - **`Post`**
+    
   Append the folling to the end of the base URL:
   - **`/feeback`**
+    
   Under the URL bar, select the option for:
 - **`body`**
+  
   Now, to the right, set the format to:
   - **`JSON`**
+    
   Allows the user to send feedback via a JSON object.  
   Example request body:  
   ```json
