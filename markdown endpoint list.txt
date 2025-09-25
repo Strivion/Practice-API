@@ -1,0 +1,46 @@
+## Endpoints
+---
+- **`GET /about`**
+---
+- **`https://python-api-example-68ou.onrender.com/about`**
+{
+    "fun_fact": "I have an exceptional spatial memory—can recall building layouts years later.",
+    "goals": [
+        "Finish Honours degree in Software Development",
+        "Achieve conversational fluency in Japanese",
+        "Publish fantasy novels",
+        "Release MMO-lite game project"
+    ],
+    "name": "Aaron Stevens",
+    "skills": [
+        "C++",
+        "C#",
+        "Blender",
+        "Unreal Engine",
+        "Game Design",
+        "Creative Writing",
+        "Japanese (JLPT N3 level)"
+    ]
+}
+
+
+- **`GET /projects`**
+---
+- **`https://python-api-example-68ou.onrender.com/projects`**
+
+{
+    "projects": [
+        "Making a simple API",
+        "Made a classic Text based CMD Line RPG",
+        "Developing an application for world domination"
+    ]
+}
+
+- **`POST /feedback`**
+---
+- **`https://python-api-example-68ou.onrender.com/projects`**
+
+{
+    "message": "Add your message in the body",
+    "ok": true
+}  
