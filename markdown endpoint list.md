@@ -10,6 +10,7 @@ Returns developer information.
 - **`https://python-api-example-68ou.onrender.com/about`**
 
 **Example response (200)**
+
 **Example time (626ms)**
 ```json
 {
@@ -39,6 +40,7 @@ Returns developer information.
 
 - **`https://python-api-example-68ou.onrender.com/projects`**
 - **Example response (200)**
+- 
 - **Example time (626ms)**
 ```json
 {
