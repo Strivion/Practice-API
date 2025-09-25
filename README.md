@@ -21,7 +21,7 @@ If you'd like to try it out, you'll need a tool such as Postman, Insomnia, Hopps
 - **`GET /about`**
   Set the dropdown on the URL bar to:
   - **`GET`**
-  - 
+    
   Append the folling to the end of the base URL:
   - **`/about`**
     
